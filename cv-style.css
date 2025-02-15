@@ -1,0 +1,150 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 5px solid #004999;
+}
+
+.header-left h1 {
+    font-size: 4.5rem;
+    margin: 0;
+}
+
+.header-left h2 {
+    font-size: 1.5rem;
+    margin: 5px 0 0;
+    font-weight: normal;
+}
+
+.header-right p {
+    margin: 5px 0;
+}
+
+/* CV Container */
+.cv-container {
+    display: flex;
+    margin: 20px auto;
+    max-width: 85%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+    flex: 1;
+}
+
+.right-column {
+    flex: 2;
+}
+
+/* Profile Image */
+.left-column img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* LinkedIn */
+.linkedin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.linkedin img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Section Left */
+.section-left {
+    margin-bottom: 20px;
+}
+
+.skills-icons img {
+    width: 75px;
+    margin: 5px;
+}
+
+/* Right Column */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Section Details */
+.section p strong:first-of-type {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.section ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Separators */
+.separator {
+    border-bottom: 1px solid #99c2ff;
+    margin: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-left h1 {
+        font-size: 2rem;
+    }
+
+    .header-left h2 {
+        font-size: 1.2rem;
+    }
+}
